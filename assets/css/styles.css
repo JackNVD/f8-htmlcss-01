@@ -664,7 +664,8 @@ a {
 .footer .social {
     display: flex;
     margin-top: 40px;
-    gap: 16px;
+    /* Cách 1 sử dụng gap để tạo khoảng cách */
+    /* gap: 16px; */
 }
 
 .footer .social-link {
@@ -675,6 +676,11 @@ a {
     justify-content: center;
     background: #f9f9f9;
     border-radius: 3px;
+}
+
+/* cách sử dụng selector +  */
+.footer .social-link + .social-link {
+    margin-left: 16px;
 }
 
 .footer .social-link:hover {
