@@ -73,14 +73,13 @@ a {
     top: -26px;
     /* tránh bị cuộn bị dưới  */
     z-index: 1;
-    background: orange;
 }
 
 .hero-wrap {
     /* cho thêm position để cho ảnh qua bên phải sử dung absolute */
     position: relative;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     /* fix margin colas */
     display: flex;
     /* khi display flex sẽ làm cho các phần tử nằm ngang nên ta cho thêm column */
