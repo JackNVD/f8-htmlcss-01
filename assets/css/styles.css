@@ -90,6 +90,7 @@ a {
     display: flex;
     /* khi display flex sẽ làm cho các phần tử nằm ngang nên ta cho thêm column */
     flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
@@ -138,16 +139,12 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     /* cho chữ xuống hàng do độ rộng nên ta lấy độ rộng trong fima 559 ta chia độ rộng của content */
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-size: 1.8rem;
     font-weight: 500;
     /* 27px / 18px = 1.5 */
@@ -157,7 +154,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     /* do là font tiếng việt nên nó to hơn font google */
     font-size: 6.2rem;
     font-weight: 700;
@@ -166,7 +163,7 @@ a {
     margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     font-size: 1.8rem;
     font-weight: 400;
     /* Lấy line height fima chia cho font-size */
