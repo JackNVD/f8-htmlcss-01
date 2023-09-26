@@ -66,11 +66,25 @@ a {
 }
 
 /*================ Header ==============*/
-.header {
+.fix-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    /* tránh bị cuộn bị dưới  */
+    z-index: 1;
+    background: orange;
+}
+
+.hero-wrap {
     /* cho thêm position để cho ảnh qua bên phải sử dung absolute */
     position: relative;
     background: #e6f0ff;
     height: 100vh;
+    /* fix margin colas */
+    display: flex;
+    /* khi display flex sẽ làm cho các phần tử nằm ngang nên ta cho thêm column */
+    flex-direction: column;
 }
 
 .navbar {
@@ -80,7 +94,9 @@ a {
     align-items: center;
     /* Cách trên 38px vì ta chọn phần tử nào to nhất */
     /* margin-top: 38px; không được vì bị lỗi nên ta chọn padding-top */
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px;
+    /* background: orange; */
 }
 
 .navbar ul {
