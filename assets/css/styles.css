@@ -7,6 +7,12 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    /* hiệu ứng trượt khi nhấn vào các link */
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
